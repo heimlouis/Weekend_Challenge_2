@@ -7,28 +7,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
     <script src="vendor/jquery-3.3.1.min.js"></script>
-    <script src="client.client.js"></script>
+    <script src="scripts/client.js"></script>
 </head>
 <body>
+    <!-- test -->
+    <button id="buttonClickTest">Click Me!</button>
+    <!-- test -->
     <h1>Calculator</h1>
-        <br>
-    <input id=numberX type="number">
-        <br>
-        <br>
-    <button id=mathPlus> + </button><button id=mathPlus> - </button>
-        <br>
-    <button id=mathPlus> * </button><button id=mathPlus> / </button>
+    <input id="numberX" type="number" placeholder="Enter First Number">
         <br>
         <br>
-    <input id=numberY type="number">
+    <button id="mathPlus"> + </button><button id=mathPlus> - </button>
+        <br>
+    <button id="mathPlus"> * </button><button id=mathPlus> / </button>
         <br>
         <br>
-    <button id=calculate>Calculate</button>
+    <input id="numberY" type="number" placeholder="Enter Second Number">
         <br>
+        <br>
+    <button id="calculate">Calculate</button>
         <br>
         <br>
         <br>
-    <div id=calcHistory>
+        <br>
+    <div id="calcHistory">
         <h3>Calculation History:</h3>
             <ol>
                 <li>1 * 2 = 1 (sample calc history)</li>

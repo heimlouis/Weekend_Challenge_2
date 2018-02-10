@@ -1,23 +1,26 @@
 {
   "name": "Weekend_Challenge_2",
   "version": "1.0.0",
-  "description": "",
+  "description": "Gives a basic folder structure for node server usage. You will need to change sources links and files as needed for your projects, but this should give you a good starting point on a folder structure.",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/heimlouis/Weekend_Challenge_2.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
   "bugs": {
     "url": "https://github.com/heimlouis/Weekend_Challenge_2/issues"
   },
   "homepage": "https://github.com/heimlouis/Weekend_Challenge_2#readme",
   "dependencies": {
+    "body-parser": "^1.18.2",
     "express": "^4.16.2"
-  }
+  },
+  "scripts": {
+    "start": "node server/server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/heimlouis/Weekend_Challenge_2.git"
+  },
+  "keywords": []
 }
