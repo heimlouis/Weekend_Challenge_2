@@ -57,19 +57,19 @@ function onReady(){
     function calculationTypeSubtractPOST(){
         let newEquation = getValuesFromForm();
         console.log('subtract POST test');
-    $.ajax({
-        type: 'POST',
-        url: '/equations',
-        data: {
-            numberX: $('#numberX').val(),
-            numberY: $('#numberY').val(),
-            mathDivide: $('#mathSubtract').val()
-        }
-    }).done(function(response){
-        console.log('in calcTypeSubtract POST');
-    }).fail(function(error){
-        console.log('The "/calcTypeSubtract" ajax GET request failed with error: ', error);
-    });
+        $.ajax({
+            type: 'POST',
+            url: '/addEquations',
+            data: {
+                numberX: $('#numberX').val(),
+                numberY: $('#numberY').val(),
+                mathDivide: $('#mathSubtract').val()
+            }
+        }).done(function(response){
+            console.log('in calcTypeSubtract POST');
+        }).fail(function(error){
+            console.log('The "/calcTypeSubtract" ajax GET request failed with error: ', error);
+        });
     }//end calculationTypeSubtract
 
     //Button click - calculationTypeSubtract (hops to server js based on the url)
@@ -93,19 +93,19 @@ function onReady(){
     function calculationTypeMultiplyPOST(){
         let newEquation = getValuesFromForm();
         console.log('multiply POST test');
-    $.ajax({
-        type: 'POST',
-        url: '/equations',
-        data: {
-            numberX: $('#numberX').val(),
-            numberY: $('#numberY').val(),
-            mathDivide: $('#mathMultiply').val()
-        }
-    }).done(function(response){
-        console.log('in calcTypeMultiply POST');
-    }).fail(function(error){
-        console.log('The "/calcTypeMultiply" ajax GET request failed with error: ', error);
-    });
+        $.ajax({
+            type: 'POST',
+            url: '/equations',
+            data: {
+                numberX: $('#numberX').val(),
+                numberY: $('#numberY').val(),
+                mathDivide: $('#mathMultiply').val()
+            }
+        }).done(function(response){
+            console.log('in calcTypeMultiply POST');
+        }).fail(function(error){
+            console.log('The "/calcTypeMultiply" ajax GET request failed with error: ', error);
+        });
     }//end calculationTypeMultiply
 
     //Button click - calculationTypeMultipy (hops to server js based on the url)
