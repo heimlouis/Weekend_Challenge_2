@@ -6,12 +6,15 @@ let app = express();
 
 //Add
 const calcTypeAdd = require('./modules/calcTypeAdd');
+//end
 
 //Subtract
 const calcTypeSubtract = require('./modules/calcTypeSubtract');
+//end
 
-//Multily
+//Multiply
 const calcTypeMultiply = require('./modules/calcTypeMultiply');
+//end
 
 //Divide
 const calcTypeDivide = require('./modules/calcTypeDivide');
@@ -47,24 +50,11 @@ app.get('/calcTypeMultiply',
 //Division Button
 app.get('/calcTypeDivide',
     function(request, response){
-        response.send(calcTypeDivide)
+        response.send(calcTypeDivide);
+        return(calcTypeDivide);
     })//end Division Button
 
 //Server Listen 
 app.listen(port, function(){
     console.log(`Server listening on port: ${port}`);
     })//end Server Listen
-
-//     const movieModule = require('../modules/movie-module');
-// router.get('/', function(request, response) {
-//   let movies = movieModule.getAllMovies();
-//   console.log('movies', movies);
-//   response.send(movies);
-// });
-
-// router.post('/add', function(request, response){
-//   let movie = request.body.movie;
-//   console.log(movie);
-//   movieModule.addMovie(movie);
-//   response.sendStatus(200);
-// });
